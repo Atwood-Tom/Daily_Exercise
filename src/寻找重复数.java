@@ -1,6 +1,8 @@
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-//链接:https://leetcode-cn.com/problems/find-the-duplicate-number/solution/
+//链接:https://leetcode-cn.com/problems/find-the-duplicate-number/
 public class 寻找重复数 {
     //方法一:先排序,返回前后两个相同的值
     public static int findDuplicate(int[] nums) {
@@ -44,11 +46,24 @@ public class 寻找重复数 {
         }
         return i;
     }
+    //方法三:使用Map
+    public static int findDuplicate2(int[] nums){
+        Map<Integer,Integer> map=new HashMap<>();
+        int i=0;
+        for (;i<nums.length;i++){
+            if (map.getOrDefault(nums[i],0)==0){
+                map.put(nums[i],1);
+            }else{
+                break;
+            }
+        }
+        return nums[i];
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String s[]=sc.nextLine().split(" ");
         int arr[]=new int[s.length];
         for (int i=0;i<s.length;arr[i]=Integer.parseInt(s[i]),i++);
-        System.out.println(findDuplicate1(arr));
+        System.out.println(findDuplicate2(arr));
     }
 }
