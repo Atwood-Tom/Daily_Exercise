@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//https://leetcode-cn.com/problems/linked-list-cycle/
 public class 环形链表2 {
     public static ListNode detectCycle(ListNode head) {
         ListNode fast,last;
