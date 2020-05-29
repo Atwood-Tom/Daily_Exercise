@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class 打家劫舍x {
+public class 打家劫舍 {
     //链接:https://leetcode-cn.com/problems/house-robber/9
     public static int rob(int[] arr) {
         if (arr.length==0){
