@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+//链接:https://leetcode-cn.com/problems/new-21-game/
 public class 新21点 {
     public static double new21Game(int N, int K, int W) {
         if (K==0){
