@@ -1,5 +1,5 @@
 import java.util.List;
-//链接:https://leetcode-cn.com/problems/diameter-of-binary-tree/
+//链接:  https://leetcode-cn.com/problems/diameter-of-binary-tree/
 public class 二叉树的直径 {
       public static class TreeNode {
           int val;
