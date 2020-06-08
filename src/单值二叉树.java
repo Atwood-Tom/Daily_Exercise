@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class 单值二叉树 {
-    //链接:https://leetcode-cn.com/problems/univalued-binary-tree/
+    //  链接:https://leetcode-cn.com/problems/univalued-binary-tree/
     public class TreeNode {
       int val;
       TreeNode left;
