@@ -7,11 +7,13 @@ public class 对称二叉树 {
         TreeNode(int x) { val = x; }
     }
     public boolean isMirror(TreeNode Lift,TreeNode Right){
-        if (Lift==null&&Right==null){
+        if(Lift==null&&Right==null){
             return true;
-        }else if (Lift==null||Right==null){
+        }
+        if (Lift==null||Right==null){
             return false;
-        }else if (Lift.val!=Right.val){
+        }
+        if (Lift.val!=Right.val){
             return false;
         }
         return isMirror(Lift.left,Right.right)&&isMirror(Lift.right,Right.left);
