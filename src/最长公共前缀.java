@@ -1,5 +1,6 @@
 public class 最长公共前缀 {
-    //链接：https://leetcode-cn.com/problems/longest-common-prefix/
+    //
+    // 链接：https://leetcode-cn.com/problems/longest-common-prefix/
     public static String longestCommonPrefix(String[] strs) {
         String x="";
         if (strs.length==0){
