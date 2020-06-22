@@ -1,4 +1,5 @@
 public class 二叉树展开为链表 {
+    //链接:https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
     public class TreeNode {
         int val;
         TreeNode left;
