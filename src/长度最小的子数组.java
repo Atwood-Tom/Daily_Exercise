@@ -4,7 +4,8 @@ import java.util.Queue;
 
 public class 长度最小的子数组 {
     //链接:https://leetcode-cn.com/problems/minimum-size-subarray-sum/
-    public static int minSubArrayLen(int s, int[] nums) {
+    //暴力
+    public static int minSubArrayLen2(int s, int[] nums) {
         int j=nums.length;
         boolean x=false;
         for (int i=0;i<nums.length;i++){
@@ -21,25 +22,43 @@ public class 长度最小的子数组 {
         }
         return 0;
     }
-    public int minSubArrayLen1(int s, int[] nums) {
-        int n = nums.length;
-        if (n == 0) {
-            return 0;
+    //队列
+    public static int minSubArrayLen1(int s, int[] nums){
+        Queue<Integer> queue=new LinkedList<>();
+        int length=Integer.MAX_VALUE;
+        int queueLength=0;
+        int sum=0;
+        for (int i=0;i<nums.length;i++){
+            sum+=nums[i];
+            queue.add(nums[i]);
+            queueLength++;
+            while(sum>=s){
+                length=Math.min(length,queueLength);
+                sum-=queue.poll();
+                queueLength--;
+            }
         }
-        int ans = Integer.MAX_VALUE;
-        int start = 0, end = 0;
-        int sum = 0;
-        while (end < n) {
-            sum += nums[end];
-            while (sum >= s) {
-                ans = Math.min(ans, end - start + 1);
-                sum -= nums[start];
-                start++;
+        return length==Integer.MAX_VALUE?0:length;
+    }
+    //双指针
+    public static int minSubArrayLen(int s, int[] nums) {
+        int x=nums.length;
+        if (x==0){
+            return x;
+        }
+        int y=Integer.MAX_VALUE;
+        int start=0;
+        int end=0;
+        int sum=0;
+        while (end<x){
+            sum+=nums[end];
+            while(sum>=s){
+               y=Math.min(y,end-start+1);
+               sum-=nums[start];
+               start++;
             }
             end++;
         }
-        return ans == Integer.MAX_VALUE ? 0 : ans;
+        return y==Integer.MAX_VALUE?0:y;
     }
-
-  
 }
