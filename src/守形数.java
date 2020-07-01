@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class 守形数 {
+    
     //链接:https://acm.nowcoder.com/questionTerminal/99e403f8342b4d0e82f1c1395ba62d7b?commentTags%3DJavaScript
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
