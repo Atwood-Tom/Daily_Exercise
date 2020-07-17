@@ -21,4 +21,11 @@ public class 数字2的个数 {
         }
         return end;
     }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        while(sc.hasNext()){
+            System.out.println(mycountNumberOf2s(sc.nextInt()));
+        }
+    }
 }
