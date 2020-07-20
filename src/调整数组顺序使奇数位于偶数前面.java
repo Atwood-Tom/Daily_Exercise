@@ -21,6 +21,7 @@ public class 调整数组顺序使奇数位于偶数前面 {
         for (int i=0;i<arr.length;array[i]=arr[i],i++);
     }
     //插入排序
+    
     public static void reOrderArraya(int [] array){
         for (int i=0;i<array.length;i++){
             if (array[i]%2==1){
