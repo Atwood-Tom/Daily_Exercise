@@ -17,7 +17,6 @@ public class 二叉树的镜像 {
         helper(root);
         return root;
     }
-
     private void helper(TreeNode root) {
         if (root==null){
             return;
