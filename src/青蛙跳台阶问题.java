@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class 青蛙跳台阶问题 {
@@ -23,6 +24,16 @@ public class 青蛙跳台阶问题 {
             next=sum;
         }
         return next;
+    }
+    public static int numWays1(int n){
+        HashMap<Integer,Integer> hashMap=new HashMap<>();
+        hashMap.put(0,1);
+        hashMap.put(1,1);
+        for (int i=2;i<=n;i++){
+            int x=(hashMap.get(i-1)+hashMap.get(i-2))%1000000007;
+            hashMap.put(i,x);
+        }
+        return hashMap.get(n);
     }
     public static int numWays2(int n){
         if (n==0){
