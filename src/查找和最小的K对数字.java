@@ -2,7 +2,7 @@ import java.util.*;
 
 public class 查找和最小的K对数字 {
     //链接:https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/
-    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+    public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {//大堆
         List<List<Integer>> res = new LinkedList<>();
         PriorityQueue<List<Integer>> pq = new PriorityQueue<>(new Comparator<List<Integer>>() {
             @Override
@@ -35,7 +35,7 @@ public class 查找和最小的K对数字 {
         }
         return res;
     }
-
+    //小堆
     class Pair {
         int n1;
         int n2;
