@@ -11,15 +11,14 @@ public class 从尾到头打印链表 {
         }
     }
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-/*      //栈方法
-        return Solution1(listNode);
-*/
+        //栈方法
+        //return Solution1(listNode);
+
         //递归方法
         ArrayList<Integer> arrayList = new ArrayList<>();
         Solution2(listNode, arrayList);
         return arrayList;
     }
-    //递归方法
     private void Solution2(ListNode listNode, ArrayList<Integer> arrayList) {
         if (listNode==null){
             return;
@@ -40,5 +39,4 @@ public class 从尾到头打印链表 {
         }
         return arrayList;
     }
-
 }

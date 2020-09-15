@@ -44,13 +44,13 @@ public class n个数里出现次数大于n的一半的数 {
         for (int i=0;i<arr.length;i++){
             if (hashMap.containsKey(arr[i])){
                 int x=hashMap.get(arr[i]);
-                hashMap.put(arr[i],x+1);
+                hashMap.replace(arr[i],x+1);
             }else{
                 hashMap.put(arr[i],1);
             }
         }
         for (Integer key: hashMap.keySet()){
-            if (hashMap.get(key)>=arr.length/2){
+            if (hashMap.get(key)>arr.length/2){
                 System.out.print(key);
             }
         }
