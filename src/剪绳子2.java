@@ -1,4 +1,5 @@
 public class 剪绳子2 {
+    //链接:https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/
     public static int cuttingRope(int n) {
         if(n<=3){
             return n-1;
