@@ -17,6 +17,7 @@ public class 复杂链表的复制 {
         HashMap<Node,Node> map = new HashMap<>(); //创建HashMap集合
         Node cur=head;
         //复制结点值
+
         while(cur!=null){
             //存储put:<key,value1>
             map.put(cur,new Node(cur.val)); //顺序遍历，存储老结点和新结点(先存储新创建的结点值)
