@@ -10,31 +10,18 @@ public class 解码字母到整数映射 {
         for (int i=1;i<=26;i++,x++){
             hashMap.put(""+i,x);
         }
-        StringBuffer sb=new StringBuffer();
+        String result="";
         for (int i=arr.length-1;i>-1;){
             if (arr[i]=='#'){
                 String newstring=""+arr[i-2]+arr[i-1];
-                sb.append(hashMap.get(newstring));
+                result=hashMap.get(newstring)+result;
                 i-=3;
             }else {
-                sb.append(hashMap.get(""+s.charAt(i)));
+                result=hashMap.get(""+s.charAt(i))+result;
                 i--;
             }
         }
-        return reverse(sb.toString());
-    }
-    private static String reverse(String ans) {
-        char[] res = ans.toCharArray();
-        int left = 0;
-        int right = ans.length() - 1;
-        while(left < right){
-            char temp = res[left];
-            res[left] = res[right];
-            res[right] = temp;
-            left++;
-            right--;
-        }
-        return String.valueOf(res);
+        return result;
     }
     //方法二:
     public String freqAlphabets2(String s) {
