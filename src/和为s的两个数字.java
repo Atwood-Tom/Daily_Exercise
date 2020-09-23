@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class 和为s的两个数字 {
     //链接:https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/
+    //方法一
     public int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> map=new HashMap<>();
         int result[]=new int[2];
@@ -24,6 +25,7 @@ public class 和为s的两个数字 {
         }
         return result;
     }
+    //方法二
     public int[] twoSum1(int[] nums, int target){
         int i=0;
         int j=nums.length-1;
