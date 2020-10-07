@@ -15,27 +15,34 @@ public class 头条校招 {
         int index = 0;
         int pre = -1, size = 0, cnt = 0;
         while (index < n) {
-//            System.out.println("pre " + pre + " size " + size);
             if(size == 0){
                 pre = ints[index];
                 size = 1;
             }else if(size == 1){
-                if(ints[index] - pre <= 10){
-                    pre = ints[index];
-                    size = 2;
-                }else{
-                    pre = ints[index];
-                    cnt += 2;
-                    size = 1;
+                if(ints[index] - pre >= 20){
+                   cnt+=2;
+                   pre=ints[index];
+                   size=1;
+                }else if (ints[index]-pre>=10){
+                    cnt+=1;
+                    pre=-1;
+                    size=0;
+                }else {
+                    pre=ints[index];
+                    size+=1;
                 }
             }else{
-                if(ints[index] - pre <= 10){
-                    pre = -1;
-                    size = 0;
-                }else{
-                    pre = ints[index];
-                    cnt++;
-                    size = 1;
+                if(ints[index] - pre >= 20){
+                    cnt+=1;
+                    pre=ints[index];
+                    size=1;
+                }else if (ints[index]-pre>=10){
+                    cnt+=1;
+                    pre=ints[index];
+                    size=1;
+                }else {
+                    pre=-1;
+                    size=0;
                 }
             }
             index++;
