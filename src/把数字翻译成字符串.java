@@ -5,6 +5,7 @@ public class 把数字翻译成字符串 {
         if (helper.length()==0){
             return 0;
         }
+        
         int result[]=new int[helper.length()+1];
         result[0]=result[1]=1;
         for (int i=1;i<helper.length();i++){
