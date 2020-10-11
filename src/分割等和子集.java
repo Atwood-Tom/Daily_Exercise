@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class 分割等和子集 {
+    //链接:https://leetcode-cn.com/problems/partition-equal-subset-sum/
     //递归方法(效率较低)
     public static boolean canPartition1(int[] nums) {
         if (nums.length<2){
