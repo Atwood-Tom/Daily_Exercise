@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class 最长递增子序列 {
+    //链接:https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&&tqId=35633&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking
     public static int[] LIS (int[] arr) {
         if (arr.length==0){
             return new int[0];
