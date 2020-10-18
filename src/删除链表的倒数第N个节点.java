@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //链接:https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/
 public class 删除链表的倒数第N个节点 {
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+    public static ListNode removeNthFromEnd1(ListNode head, int n) {
         ListNode newhead=new ListNode(0);
         newhead.next=head;
         int length=0;
@@ -11,7 +11,21 @@ public class 删除链表的倒数第N个节点 {
         head.next=head.next.next;
         return newhead.next;
     }
-
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode newhead=new ListNode(0);
+        newhead.next=head;
+        ListNode pre=head;
+        ListNode cur=newhead;
+        for(int i=0;i<n&&pre!=null;i++){
+            pre=pre.next;
+        }
+        while(pre!=null){
+            pre=pre.next;
+            cur=cur.next;
+        }
+        cur.next=cur.next.next;
+        return newhead.next;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String s[]=sc.nextLine().split(" ");
