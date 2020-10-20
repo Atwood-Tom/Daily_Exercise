@@ -3,37 +3,66 @@ import java.util.Arrays;
 public class Sort {
 
     public static void main(String[] args) {
-        int arr[]=new int[]{1,5,3,8,8,2,3,5};
+        int arr[]=new int[]{5,5,5,5,5};
         System.out.println(Arrays.toString(arr));
         //插入排序
         System.out.print("插入排序:");
-        int result1[]=insertSort(arr);
+        int result1[]=arr.clone();
+                result1=insertSort(arr);
         System.out.println(Arrays.toString(result1));
         //选择排序
         System.out.print("选择排序:");
-        int result2[]=selectSort(arr);
+        int result2[]=arr.clone();
+                result2=selectSort(arr);
         System.out.println(Arrays.toString(result2));
         //堆排序
         System.out.print(" 堆排序:");
-        int result3[]=heapSort(arr);
+        int result3[]=arr.clone();
+                result3=heapSort(arr);
         System.out.println(Arrays.toString(result3));
         //希尔排序
         System.out.print("希尔排序:");
-        int result4[]=shellSort(arr);
+        int result4[]=arr.clone();
+            result4=shellSort(arr);
         System.out.println(Arrays.toString(result4));
-        //正确结果
+        //快速排序
+        System.out.print("快速排序:");
+        int result5[]=arr.clone();
+        quickSort(result5);
+        System.out.println(Arrays.toString(result5));
+        //正确答案
+        System.out.print("正确答案:");
         Arrays.sort(arr);
-        System.out.print("正确结果");
         System.out.println(Arrays.toString(arr));
     }
+    //快速排序
+    private static void quickSort(int[] arr) {
+        partition(arr,0,arr.length-1);
+    }
 
-    private static int[] shellSort(int[] arr) {
-        int gap=arr.length;
-        for (;gap>1;gap=gap/3+1){
-            insertSort(arr,gap);
+    private static void partition(int[] arr, int start, int end) {
+        if (start>=end){
+            return;
         }
-        insertSort(arr,1);
-        return arr;
+        int value=arr[start];
+        int mintime=0;
+        int x=start+1;
+        int y=end;
+        while(x<y){
+            for (;x<y&&arr[x]<=value;x++,mintime++);
+            for (;x<y&&arr[y]>value;y--);
+            if (x==y){
+                break;
+            }else {
+                int mid=arr[x];
+                arr[x]=arr[y];
+                arr[y]=mid;
+            }
+        }
+        arr[start]=arr[mintime+start];
+        arr[start+mintime]=value;
+        partition(arr,start,start+mintime-1);
+        partition(arr,start+mintime+1,end);
     }
 
     //堆排序
@@ -97,7 +126,7 @@ public class Sort {
             //有序区间:[0,i)
             int j=i-1;
             int value=arr[i];
-            for (;j>=-1&&arr[j]>value;j--){
+            for (;j>-1&&arr[j]>value;j--){
                 arr[j+1]=arr[j];
             }
             arr[j+1]=value;
@@ -114,6 +143,14 @@ public class Sort {
             }
             arr[j+gap]=value;
         }
+        return arr;
+    }
+    private static int[] shellSort(int[] arr) {
+        int gap=arr.length;
+        for (;gap>1;gap=gap/3+1){
+            insertSort(arr,gap);
+        }
+        insertSort(arr,1);
         return arr;
     }
 }
