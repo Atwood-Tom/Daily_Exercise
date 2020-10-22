@@ -23,9 +23,4 @@ public class 寻找第K大 {
         }
         return pq.poll();
     }
-
-    public static void main(String[] args) {
-        寻找第K大 x=new 寻找第K大();
-        System.out.println(x.findKth(new int[]{1,2,3,45,7},5,3));
-    }
 }
