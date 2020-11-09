@@ -24,10 +24,4 @@ public class 岛屿数量 {
         clearSurround(grid,i,j+1);
         clearSurround(grid,i,j-1);
     }
-
-    public static void main(String[] args) {
-        char x[][]=new char[1][1];
-        x[0][0]=1;
-        System.out.println(solve(x));
-    }
 }
