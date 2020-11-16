@@ -19,6 +19,7 @@ public class 根据身高重建队列 {
         return ans.toArray(new int[ans.size()][]);
     }
 
+    
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
