@@ -16,8 +16,6 @@ public class 计算各个位数不同的数字个数 {
         }
         return result;
     }
-
-
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println(countNumbersWithUniqueDigits(sc.nextInt()));
