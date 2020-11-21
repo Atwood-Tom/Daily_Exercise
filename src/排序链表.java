@@ -40,7 +40,6 @@ public class 排序链表 {
         for (i=0,p=head;p!=null&&i<arr.length;p.val=arr[i],i++,p=p.next);
         return head;
     }
-    
     public static void main(String[] args) {
         ListNode head=create();
         head=sortList(head);
