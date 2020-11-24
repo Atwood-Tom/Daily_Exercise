@@ -20,7 +20,6 @@ public class 雀魂启动 {
         int j=0;
         for (int i=1;i<times.length;i++){
             //1~9依次++;
-            //注意:若值为4则证明所有的牌已经发完.则不能继续发牌
             //并判断是否成立,若成立保存至数组中
             int arr[]=Arrays.copyOf(times,times.length);
             if (times[i]==4){
@@ -46,26 +45,21 @@ public class 雀魂启动 {
         }
     }
     private static boolean judge(int[] times) {
-        //遍历 找到雀头
-        for (int i=1;i<10;i++){
+        for (int i=1;i<times.length;i++){
             int arr[]=Arrays.copyOf(times,times.length);
-            //只有值大于等于2的值才可以为雀头
             if (arr[i]>=2){
-                //找到雀头后-2;将剩下进行判断检查是否可以凑成4对顺子或刻子
                 arr[i]-=2;
-                if (helper(arr)){//若成立则返回true
+                if (helper(arr)){
                     return true;
                 }
-                //回溯
                 arr[i]+=2;
             }
         }
-        //遍历完没有符合条件的即返回false
         return false;
     }
 
     private static boolean helper(int[] times) {
-        for (int i=1;i<10;i++){
+        for (int i=1;i<times.length;i++){
             if (times[i]>=3){
                 times[i]-=3;
                 if (helper(times)){
@@ -81,7 +75,7 @@ public class 雀魂启动 {
                 --times[i + 2];
             }
         }
-        for (int i = 1; i < 10; ++i) {
+        for (int i = 1; i <= 9; ++i) {
             if (times[i] != 0) {
                 return false;
             }
