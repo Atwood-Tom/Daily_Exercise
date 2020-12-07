@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class 大数加法 {
@@ -6,6 +7,9 @@ public class 大数加法 {
         while(sc.hasNextLine()){
             String x=sc.nextLine();
             String y=sc.nextLine();
+            BigInteger a=new BigInteger(x);
+            BigInteger b=new BigInteger(y);
+            System.out.println(a.add(b));
             System.out.println(Solution(x, y));
         }
     }
@@ -21,16 +25,16 @@ public class 大数加法 {
             sb=add+sb;
             up=(a+b+up)/10;
         }
-        if (i==0){
-            for (;j>=0;j--){
-                int a=y.charAt(j)-'0';
+        if (i>=0){
+            for (;i>=0;i--){
+                int a=x.charAt(i)-'0';
                 int add=(a+up)%10;
                 up=(a+up)/10;
                 sb=add+sb;
             }
-        } else if (j==0){
-            for (;i>=0;i--){
-                int a=y.charAt(i)-'0';
+        } else if (j>=0){
+            for (;j>=0;j--){
+                int a=y.charAt(j)-'0';
                 int add=(a+up)%10;
                 up=(a+up)/10;
                 sb=add+sb;
