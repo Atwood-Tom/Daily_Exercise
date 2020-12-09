@@ -1,5 +1,3 @@
-import org.junit.Test;
-
 public class 不同路径 {
     //链接:https://leetcode-cn.com/problems/unique-paths/
     public int uniquePaths(int m, int n) {
