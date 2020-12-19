@@ -1,5 +1,5 @@
-public class 矩阵中的路径 {
-    //链接:https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/submissions/
+public class 单词搜索 {
+    //链接:https://leetcode-cn.com/problems/word-search/
     public boolean exist(char[][] board, String word) {
         char helper[][][]=new char[board.length][board[0].length][2];
         for (int i=0;i<board.length;i++){
@@ -42,7 +42,7 @@ public class 矩阵中的路径 {
     }
 
     public static void main(String[] args) {
-        矩阵中的路径 x=new 矩阵中的路径();
+        单词搜索 x=new 单词搜索();
         System.out.println(x.exist(new char[][]{{'a'}},"a"));
     }
 }
