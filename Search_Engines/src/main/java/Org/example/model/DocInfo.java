@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class DocInfo {
     private Integer id;//类似于数据库主键
-    private String title;
+    private String title;//文件名称
     private String url;
     private String content;
 

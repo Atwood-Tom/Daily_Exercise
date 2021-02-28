@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Parser {
     //API目录
-    public static final String API_PATH="F:\\helper\\Project_helper\\docs\\api";
+    public static final String API_PATH="F:\\Daily_Exercise\\Search_Engines\\Project_helper\\docs\\api";
     //构建的本地文件正排索引
     public static final String RAW_DATA="F:\\Daily_Exercise\\Search_Engines\\raw_data.txt";
     //官方API文档的根路径
@@ -29,8 +29,9 @@ public class Parser {
             //一个html介意DocInfo有的属性,保存本地正排索引文件
             DocInfo doc=ParseHtml(html.get(i));
             //docs.add(doc);
-            //保存本地正排索引那件,输出流输出到目标文件
+            //保存本地正排索引文件,输出流输出到目标文件
             System.out.println("Parse "+html.get(i).getAbsolutePath());
+            //System.out.println(doc.toString());
             pw.println(doc.getTitle()+"\3"+doc.getUrl()+"\3"+doc.getContent());
         }
     }

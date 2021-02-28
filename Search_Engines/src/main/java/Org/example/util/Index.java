@@ -117,10 +117,10 @@ public class Index {
             String keyword=e.getKey();
             System.out.print(keyword+": ");
             List<Weight> weights=e.getValue();
-            weights.stream()
-                    .map(w->{
-                        return "("+w.getDoc().getId()+","+w.getWeight()+")";
-                    }).forEach(System.out::print);
+            for (Weight w : weights) {
+                String s = "(" + w.getDoc().getId() + "," + w.getWeight() + ")";
+                System.out.print(s);
+            }
             System.out.println();
         }
     }
