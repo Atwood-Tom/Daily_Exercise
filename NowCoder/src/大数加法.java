@@ -15,7 +15,7 @@ public class 大数加法 {
     }
 
     private static String Solution(String x, String y) {
-        String sb=new String();
+        String sb= "";
         int up=0;
         int i=x.length()-1,j=y.length()-1;
         for (;i>=0&&j>=0;i--,j--){

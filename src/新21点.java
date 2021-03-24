@@ -6,7 +6,7 @@ public class 新21点 {
         if (K==0){
             return 1.0;
         }
-        double arr[]=new double[W+K];
+        double[] arr =new double[W+K];
         for (int i=K;i<arr.length;i++){
             arr[i]=i<=N?1:0;
         }

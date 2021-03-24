@@ -24,13 +24,13 @@ public class 有序链表转化二叉搜索树 {
       public TreeNode sortedListToBST(ListNode head) {
           int num=0;
           for (ListNode p=head;p!=null;p=p.next,num++);
-          int arr[]=new int[num];
+          int[] arr =new int[num];
           int i=0;
           for (ListNode p=head;p!=null;arr[i]=p.val,i++,p=p.next);
           return Solution(arr,0,num-1);
     }
 
-    private TreeNode Solution(int arr[], int l, int r) {
+    private TreeNode Solution(int[] arr, int l, int r) {
           if (l>r){
               return null;
           }

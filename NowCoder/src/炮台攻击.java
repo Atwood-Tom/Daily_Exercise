@@ -7,7 +7,7 @@ public class 炮台攻击 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextLine()){
             int result=0;
-            String arr[]=sc.nextLine().split(" ");
+            String[] arr =sc.nextLine().split(" ");
             System.out.println(Arrays.toString(arr));
             int r =Integer.parseInt(arr[0]);
             int x1=Integer.parseInt(arr[1]);

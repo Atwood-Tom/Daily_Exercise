@@ -11,7 +11,7 @@ public class 最长连号 {
         }
         int max=0;
         int helper=1;
-        int arr[]=new int[10000];
+        int[] arr =new int[10000];
         for (int i=0;i<n;arr[i]=sc.nextInt(),i++);
         for (int i=0;i<n;i++){
             if (arr[i]+1==arr[i+1]){

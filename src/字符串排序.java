@@ -6,7 +6,7 @@ public class 字符串排序 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int i=sc.nextInt();
-        int arr[]=new int[i];
+        int[] arr =new int[i];
         for (int j=0;j<i;j++){
             String s=sc.next();
             int length=s.length();

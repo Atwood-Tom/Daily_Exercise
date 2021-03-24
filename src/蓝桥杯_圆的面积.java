@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class 蓝桥杯_圆的面积 {
     //链接:http://lx.lanqiao.cn/problem.page?gpid=T3
-    private static double PI=3.14159265358979323;
+    private static final double PI=3.14159265358979323;
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

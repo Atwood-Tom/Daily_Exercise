@@ -6,7 +6,7 @@ public class 机器人跳跃问题 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
-        int arr[]=new int[x];
+        int[] arr =new int[x];
         int result=0;
         for (int y=0;y<x;y++){
             arr[y]=sc.nextInt();

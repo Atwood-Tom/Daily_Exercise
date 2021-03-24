@@ -5,7 +5,7 @@ public class 两种排序方法 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
-        String helper[]=new String[x];
+        String[] helper =new String[x];
         for (int i=0;i < x;helper[i]=sc.next(),i++);
         Boolean a=lengths(helper);
         Boolean b=lexicographically(helper);

@@ -7,7 +7,7 @@ public class 打乱一个数组 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
             int num=sc.nextInt();
-            int arr[]=new int[num];
+            int[] arr =new int[num];
             for (int i=0;i<num;i++){
                 arr[i]=sc.nextInt();
             }
@@ -37,7 +37,7 @@ public class 打乱一个数组 {
     //使用全排列
 
     private static void Solution2(int[] arr) {
-        int res[][]=new int[arr.length][2];
+        int[][] res =new int[arr.length][2];
         for (int i=0;i<arr.length;i++){
             res[i][0]=arr[i];
             res[i][1]=0;

@@ -1,7 +1,7 @@
 public class 柠檬水找零 {
     //链接:https://leetcode-cn.com/problems/lemonade-change/
     public boolean lemonadeChange(int[] bills) {
-        int arr[]=new int[3];
+        int[] arr =new int[3];
         for (int i=0;i<bills.length;i++){
             if (bills[i]==5){
                 arr[0]++;

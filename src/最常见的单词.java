@@ -12,7 +12,7 @@ public class 最常见的单词 {
         HashMap<String,Integer> hashMap=new HashMap<>();
         String result = null;
         int max=0;
-        String node[]=paragraph.split(" ");
+        String[] node =paragraph.split(" ");
         for (int i=0;i<node.length;i++){
             if (!node[i].equals("")&&!inbanned(banned,node[i])){
                 hashMap.put(node[i],hashMap.getOrDefault(node[i],0)+1);

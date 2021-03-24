@@ -20,7 +20,7 @@ public class 环形链表2 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
+        String[] s =sc.nextLine().split(" ");
         ListNode head=new ListNode(Integer.parseInt(s[0]));
         ListNode tail=head;
         for (int i = 1; i < s.length; i++) {

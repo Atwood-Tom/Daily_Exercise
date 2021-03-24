@@ -9,7 +9,7 @@ public class 打家劫舍 {
         if(arr.length==1){
             return arr[0];
         }
-        int nums[]=new int[arr.length+1];
+        int[] nums =new int[arr.length+1];
         nums[0]=0;
         nums[1]=arr[0];
         for (int i = 2; i <nums.length ; i++) {
@@ -23,8 +23,8 @@ public class 打家劫舍 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
-        int arr[]=new int[s.length];
+        String[] s =sc.nextLine().split(" ");
+        int[] arr =new int[s.length];
         for (int i=0;i<s.length;i++){
             if (s[i].equals("")){
                 continue;

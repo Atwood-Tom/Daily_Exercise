@@ -11,7 +11,7 @@ public class 整数与IP地址间的转换 {
             String s=sc.nextLine();
             //如果存在"." 则证明输入的是IP地址
             if (s.contains(".")){
-                String x[]=s.split("\\.");
+                String[] x =s.split("\\.");
                 solution1(x);
             }else {
                 //如果不存在"," 则证明输入的是十进制型的IP地址
@@ -20,7 +20,7 @@ public class 整数与IP地址间的转换 {
         }
     }
 
-    private static void solution1(String x[]) {
+    private static void solution1(String[] x) {
         Queue<Integer> queue=new LinkedList<>();
         for (int i=x.length-1;i>=0;i--){
             int y=Integer.parseInt(x[i]);

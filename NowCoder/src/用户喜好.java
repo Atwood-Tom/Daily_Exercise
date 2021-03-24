@@ -16,7 +16,7 @@ public class 用户喜好 {
             hashMap.get(key).add(i+1);
         }
         int time=sc.nextInt();
-        int result[]=new int[time];
+        int[] result =new int[time];
         for (int i=0;i<time;i++){
             int l=sc.nextInt();
             int r=sc.nextInt();

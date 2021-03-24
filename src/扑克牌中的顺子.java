@@ -17,9 +17,6 @@ public class 扑克牌中的顺子 {
                 return false;
             }
         }
-        if (max-min<=5){
-            return true;
-        }
-        return false;
+        return max - min <= 5;
     }
 }

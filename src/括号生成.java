@@ -6,7 +6,7 @@ public class 括号生成 {
         List<String> res=new ArrayList<>();
         int time=2*n;
         int left=0;
-        boolean arr[]=new boolean[time];
+        boolean[] arr =new boolean[time];
         String help="";
         Solution(res,arr,help,0,time,hashMap,left);
         return res;

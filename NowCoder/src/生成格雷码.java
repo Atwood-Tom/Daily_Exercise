@@ -6,7 +6,7 @@ public class 生成格雷码 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
             int n=sc.nextInt();
-            String arr[]=getGray(n);
+            String[] arr =getGray(n);
             System.out.println(Arrays.toString(arr));
         }
     }

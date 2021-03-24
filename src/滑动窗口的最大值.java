@@ -10,7 +10,7 @@ public class 滑动窗口的最大值 {
         if (nums.length==0){
             return new int[0];
         }
-        int arr[]=new int[nums.length-k+1];
+        int[] arr =new int[nums.length-k+1];
         for (int i=0;i<arr.length;i++){
             int max=Integer.MIN_VALUE;
             for (int j=i;j<i+k&&j<nums.length;j++){
@@ -44,7 +44,7 @@ public class 滑动窗口的最大值 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNext()){
             int i=sc.nextInt();
-            int arr[]=new int[i];
+            int[] arr =new int[i];
             for (int j=0;j<arr.length;arr[j]=sc.nextInt(),j++);
             System.out.println(Arrays.toString(maxSlidingWindow(arr,sc.nextInt())));
         }

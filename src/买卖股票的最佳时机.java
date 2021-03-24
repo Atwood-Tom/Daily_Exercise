@@ -12,7 +12,7 @@ public class 买卖股票的最佳时机 {
     }
 
     public static void main(String[] args) {
-        int arr[]=new int[]{1,3,2,8,4,9};
+        int[] arr =new int[]{1,3,2,8,4,9};
         int fee=2;
         System.out.println(maxProfit(arr,fee));
     }

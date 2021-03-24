@@ -10,7 +10,7 @@ public class 解压缩编码列表 {
                 list.add(nums[i+1]);
             }
         }
-        int arr[]=new int[list.size()];
+        int[] arr =new int[list.size()];
         for (int i=0;i<arr.length;i++){
             arr[i]=list.get(i);
         }

@@ -9,7 +9,7 @@ public class 最长递增子序列 {
             return new int[0];
         }
         int maxIndex=0;
-        int dp[]=new int[arr.length];
+        int[] dp =new int[arr.length];
         for (int i=0;i<arr.length;i++){
             dp[i]=1;
             for (int j=0;j<i;j++){
@@ -24,7 +24,7 @@ public class 最长递增子序列 {
             }
         }
         int length=dp[maxIndex];
-        int result[]=new int[length];
+        int[] result =new int[length];
         result[length-1]=arr[maxIndex];
         for (int i=result.length-2;i>-1&&maxIndex>-1;maxIndex--){
             if (arr[maxIndex]<result[i+1]){
@@ -35,7 +35,7 @@ public class 最长递增子序列 {
     }
 
     public static void main(String[] args) {
-        int arr[]=new int[]{1,5,2,9,8,10};
+        int[] arr =new int[]{1,5,2,9,8,10};
         System.out.println(Arrays.toString(LIS1(arr)));
     }
     public static int[] LIS1 (int[] arr) {

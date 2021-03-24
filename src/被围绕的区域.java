@@ -49,7 +49,7 @@ public class 被围绕的区域 {
     }
 
     public static void main(String[] args) {
-        char arr[][]=new char[2][2];
+        char[][] arr =new char[2][2];
         arr[0][0]='O';
         arr[0][1]='O';
         arr[1][0]='O';

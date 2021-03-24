@@ -61,8 +61,8 @@ public class 寻找重复数 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
-        int arr[]=new int[s.length];
+        String[] s =sc.nextLine().split(" ");
+        int[] arr =new int[s.length];
         for (int i=0;i<s.length;arr[i]=Integer.parseInt(s[i]),i++);
         System.out.println(findDuplicate2(arr));
     }

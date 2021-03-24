@@ -11,6 +11,6 @@ public class 数值的整数次方 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println(myPow(sc.nextDouble(),sc.nextInt()));;
+        System.out.println(myPow(sc.nextDouble(),sc.nextInt()));
     }
 }

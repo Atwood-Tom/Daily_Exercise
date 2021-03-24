@@ -1,7 +1,7 @@
 public class 三步问题 {
     //链接：https://leetcode-cn.com/problems/three-steps-problem-lcci/
     public int waysToStep(int n) {
-        int arr[]=new int[1000000];
+        int[] arr =new int[1000000];
         arr[0]=1;
         arr[1]=2;
         arr[2]=4;

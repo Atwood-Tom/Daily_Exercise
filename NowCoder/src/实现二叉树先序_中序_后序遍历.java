@@ -18,7 +18,7 @@ public class 实现二叉树先序_中序_后序遍历 {
         List<Integer> pre=new ArrayList<>();
         List<Integer> in=new ArrayList<>();
         List<Integer> out=new ArrayList<>();
-        int arr[][]=new int[3][];
+        int[][] arr =new int[3][];
         //先序遍历
         preorder(root,pre);
         arr[0]=helper(pre);
@@ -59,7 +59,7 @@ public class 实现二叉树先序_中序_后序遍历 {
     }
 
     private int[] helper(List<Integer> result) {
-        int part[]=new int[result.size()];
+        int[] part =new int[result.size()];
         int j=0;
         for (Integer i:result){
             part[j]=i;

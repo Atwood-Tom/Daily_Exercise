@@ -5,9 +5,9 @@ public class 雀魂启动 {
     //链接:https://www.nowcoder.com/practice/448127caa21e462f9c9755589a8f2416?tpId=137&&tqId=33897&rp=1&ru=/ta/exam-bytedance&qru=/ta/exam-bytedance/question-ranking
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String x[]=sc.nextLine().split(" ");
-        int arrays[]=new int[x.length];
-        int times[]=new int[10];
+        String[] x =sc.nextLine().split(" ");
+        int[] arrays =new int[x.length];
+        int[] times =new int[10];
         for (int i=0;i<x.length;i++){
             arrays[i]=Integer.parseInt(x[i]);
             times[arrays[i]]+=1;
@@ -16,12 +16,12 @@ public class 雀魂启动 {
     }
 
     private static void Solution(int[] times) {
-        int result[]=new int[15];
+        int[] result =new int[15];
         int j=0;
         for (int i=1;i<times.length;i++){
             //1~9依次++;
             //并判断是否成立,若成立保存至数组中
-            int arr[]=Arrays.copyOf(times,times.length);
+            int[] arr =Arrays.copyOf(times,times.length);
             if (times[i]==4){
                 continue;
             }
@@ -46,7 +46,7 @@ public class 雀魂启动 {
     }
     private static boolean judge(int[] times) {
         for (int i=1;i<times.length;i++){
-            int arr[]=Arrays.copyOf(times,times.length);
+            int[] arr =Arrays.copyOf(times,times.length);
             if (arr[i]>=2){
                 arr[i]-=2;
                 if (helper(arr)){

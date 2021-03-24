@@ -42,7 +42,7 @@ public class 每K个一组反转链表 {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
+        String[] s =sc.nextLine().split(" ");
         ListNode head=new ListNode(0);
         ListNode tail=head;
         int length=0;

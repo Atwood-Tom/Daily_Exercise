@@ -39,9 +39,6 @@ public class 回文串 {
                 }
             }
         }
-        if (deque.isEmpty()){
-            return true;
-        }
-        return false;
+        return deque.isEmpty();
     }
 }

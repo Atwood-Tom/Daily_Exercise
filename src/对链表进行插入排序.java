@@ -5,7 +5,7 @@ public class 对链表进行插入排序 {
     public ListNode insertionSortList1(ListNode head) {
         int i=0;
         for (ListNode p=head;p!=null;p=p.next,i++);
-        int arr[]=new int[i];
+        int[] arr =new int[i];
         i = 0;
         for ( ListNode p=head; i < arr.length; i++,p=p.next) {
             arr[i]=p.val;

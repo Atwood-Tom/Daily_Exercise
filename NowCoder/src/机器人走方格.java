@@ -6,7 +6,7 @@ public class 机器人走方格 {
         if (x+y>12){
             return 0;
         }
-        int arr[][]=new int[x][y];
+        int[][] arr =new int[x][y];
         for (int j=0;j<y;j++){
             arr[0][j]=1;
         }

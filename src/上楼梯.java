@@ -12,7 +12,7 @@ public class 上楼梯 {
         }else if (n==3){
             return 4;
         }
-        int arr[]=new int[n+1];
+        int[] arr =new int[n+1];
         arr[n-1]=1;
         arr[n-2]=2;
         arr[n-3]=4;
@@ -25,7 +25,7 @@ public class 上楼梯 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNext()){
-            System.out.println(countWays(sc.nextInt()));;
+            System.out.println(countWays(sc.nextInt()));
         }
     }
 }

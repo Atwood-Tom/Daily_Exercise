@@ -1,6 +1,6 @@
 public class 区域和检索 {
     //链接：https://leetcode-cn.com/problems/range-sum-query-immutable/
-    int arr[];
+    int[] arr;
     public void NumArray(int[] nums) {
         arr=nums;
     }

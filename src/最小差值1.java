@@ -19,12 +19,12 @@ public class 最小差值1 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
+        String[] s =sc.nextLine().split(" ");
         int K=sc.nextInt();
-        int arr[]=new int[s.length];
+        int[] arr =new int[s.length];
         for (int i=0;i<arr.length;i++){
             arr[i]=Integer.parseInt(s[i]);
         }
-        System.out.println(smallestRangeI(arr,K));;
+        System.out.println(smallestRangeI(arr,K));
     }
 }

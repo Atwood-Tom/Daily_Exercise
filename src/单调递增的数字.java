@@ -45,7 +45,7 @@ public class 单调递增的数字 {
             return N-1;
         }
        String helper=String.valueOf(N);
-       String res=new String();
+       String res= "";
        int right=helper.charAt(helper.length()-1)-'0';
        int left;
        for (int i=helper.length()-2;i>=0;i--){

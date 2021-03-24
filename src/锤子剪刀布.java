@@ -9,8 +9,8 @@ public class 锤子剪刀布 {
         int successA=0,successB=0,draw=0;
         //C锤子 B布 J剪刀
         //int[0] 布    int[1]  锤子  int[2]  剪刀
-        int arrSuccessTimeA[]=new int[3];
-        int arrSuccessTimeB[]=new int[3];
+        int[] arrSuccessTimeA =new int[3];
+        int[] arrSuccessTimeB =new int[3];
         for (int i=0;i<N;i++){
             String A=sc.next();
             String B=sc.next();

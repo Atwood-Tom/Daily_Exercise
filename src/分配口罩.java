@@ -22,7 +22,9 @@ public class 分配口罩 {
      * 能全部分配给其中一家医院。市长希望 2 所医院获得的口罩总数之差越小越好。
      * 请你计算这个差最小是多少？
      */
-    static int sum, cnt = Integer.MAX_VALUE, value[] = new int[15];
+    static int sum;
+    static int cnt = Integer.MAX_VALUE;
+    static int[] value = new int[15];
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

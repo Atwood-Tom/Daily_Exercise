@@ -14,11 +14,7 @@ public class 拥有最多糖果的孩子 {
             }
         }
         for (int i=0;i<candies.length;i++){
-            if (candies[i]+extraCandies>=max){
-                satisfy.add(true);
-            }else {
-                satisfy.add(false);
-            }
+            satisfy.add(candies[i] + extraCandies >= max);
         }
         return satisfy;
     }

@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class n个数里出现次数大于n的一半的数 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
-        int arr[]=new int[s.length];
+        String[] s =sc.nextLine().split(" ");
+        int[] arr =new int[s.length];
         for (int i=0;i<s.length;i++){
             arr[i]=Integer.parseInt(s[i]);
         }
@@ -39,7 +39,7 @@ public class n个数里出现次数大于n的一半的数 {
             System.out.println(arr[right]);
         }
     }
-    private  static void SolutionByHashMap(int arr[]){
+    private  static void SolutionByHashMap(int[] arr){
         HashMap<Integer,Integer> hashMap=new HashMap<>();
         for (int i=0;i<arr.length;i++){
             if (hashMap.containsKey(arr[i])){

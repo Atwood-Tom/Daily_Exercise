@@ -12,7 +12,7 @@ public class 打家劫舍2 {
         if (start==end){
             return arr[start];
         }
-        int num[]=new int[end-start+1];
+        int[] num =new int[end-start+1];
         num[0]=0;
         num[1]=arr[start];
         for (int i=2;i<num.length;i++){
@@ -26,7 +26,7 @@ public class 打家劫舍2 {
     }
 
     public static void main(String[] args) {
-        int arr[]=new int[]{0};
+        int[] arr =new int[]{0};
         System.out.println(rob(arr));
     }
 }

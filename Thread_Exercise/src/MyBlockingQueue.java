@@ -1,6 +1,6 @@
 public class MyBlockingQueue <E>{
     private volatile static int index;
-    private Object[] items;
+    private final Object[] items;
     private int putIndex;//填入元素索引
     private int takeIndex;//弹出元素索引
     private int size;//长度

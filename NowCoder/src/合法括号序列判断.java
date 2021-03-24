@@ -13,9 +13,6 @@ public class 合法括号序列判断 {
                 return false;
             }
         }
-        if (stack.isEmpty()){
-            return true;
-        }
-        return false;
+        return stack.isEmpty();
     }
 }

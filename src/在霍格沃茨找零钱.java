@@ -27,8 +27,8 @@ public class 在霍格沃茨找零钱 {
     }
 
     private static long Solution(String a) {
-        int arr[]=new int[3];
-        String x[]=a.split("\\.");
+        int[] arr =new int[3];
+        String[] x =a.split("\\.");
         for (int i=0;i<3;i++){
             arr[i]=Integer.parseInt(x[i]);
         }

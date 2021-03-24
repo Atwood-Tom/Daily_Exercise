@@ -12,7 +12,7 @@ public class 斐波那契 {
     }
 
     private static BigInteger fsum(int x) {
-        BigInteger arr[]=new BigInteger[x+3];
+        BigInteger[] arr =new BigInteger[x+3];
         arr[1]=BigInteger.valueOf(1);
         arr[2]=BigInteger.valueOf(1);
         for (int i=3;i<arr.length;i++){
@@ -26,7 +26,7 @@ public class 斐波那契 {
         if (x<=2){
             return BigInteger.valueOf(1);
         }
-        BigInteger arr[]=new BigInteger[x+1];
+        BigInteger[] arr =new BigInteger[x+1];
         arr[1]=BigInteger.valueOf(1);
         arr[2]=BigInteger.valueOf(1);
         for (int i=3;i<arr.length;i++){

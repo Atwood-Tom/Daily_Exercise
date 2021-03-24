@@ -10,7 +10,7 @@ public class 按长度排序 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
             int N=sc.nextInt();
-            String arr[]=new String[N];
+            String[] arr =new String[N];
             for (int i=0;i<N;i++){
                 arr[i]=String.valueOf(sc.nextInt());
             }

@@ -15,7 +15,7 @@ public class 两个数组的交集2 {
                 result.add(nums2[i]);
             }
         }
-        int arr[]=new int[result.size()];
+        int[] arr =new int[result.size()];
         for (int i=0;i<arr.length;i++){
             arr[i]=result.get(i);
         }

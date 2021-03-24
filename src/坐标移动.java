@@ -6,7 +6,7 @@ public class 坐标移动 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNext()){
-            String arr[]=sc.nextLine().split(";");
+            String[] arr =sc.nextLine().split(";");
             String end=Solution(arr);
             System.out.println(end);
         }
@@ -19,7 +19,7 @@ public class 坐标移动 {
             if (arr[i].equals("")){
                 continue;
             }
-            String add=arr[i].substring(1,arr[i].length());
+            String add=arr[i].substring(1);
             if (!Check(add)){
                 continue;
             }else {

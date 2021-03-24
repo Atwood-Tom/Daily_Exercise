@@ -38,7 +38,7 @@ public class 全排列 {
             return res;
         }
         Deque<Integer> helper=new ArrayDeque<>();
-        Boolean arr[]=new Boolean[nums.length];
+        Boolean[] arr =new Boolean[nums.length];
         for (int i=0;i<arr.length;i++){
             arr[i]=false;
         }

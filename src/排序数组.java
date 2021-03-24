@@ -18,14 +18,14 @@ public class 排序数组 {
         return CreatList(arr);
     }
     //希尔排序
-    public static List<Integer> shellSort(int arr[] ){
+    public static List<Integer> shellSort(int[] arr){
         for (int i=arr.length;i>1;i=i/3+1){
             insertSortGroup(arr,i);
         }
         insertSortGroup(arr,1);
         return CreatList(arr);
     }
-    public static  void insertSortGroup(int arr[],int group){
+    public static  void insertSortGroup(int[] arr, int group){
         for (int i=group;i<arr.length;i++){
             int j=i-group;
             int find=arr[i];
@@ -36,7 +36,7 @@ public class 排序数组 {
         }
     }
     //选择排序
-    public static List<Integer> selectSort(int arr[]){
+    public static List<Integer> selectSort(int[] arr){
         //有序区间[arr.length-i,arr.length)
         for(int i=0;i<arr.length;i++){
             //无序区间[0,arr.length)
@@ -52,7 +52,7 @@ public class 排序数组 {
         }
         return CreatList(arr);
     }
-    public static List<Integer> CreatList(int arr[]){
+    public static List<Integer> CreatList(int[] arr){
         List<Integer> array=new LinkedList<>();
         for (int i=0;i<arr.length;i++){
             array.add(arr[i]);
@@ -61,8 +61,8 @@ public class 排序数组 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(",");
-        int arr[]=new int[s.length];
+        String[] s =sc.nextLine().split(",");
+        int[] arr =new int[s.length];
         for (int i=0;i<arr.length;i++){
             arr[i]=Integer.parseInt(s[i]);
         }

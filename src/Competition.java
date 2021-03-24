@@ -8,7 +8,7 @@ public class Competition {
         while(sc.hasNextInt()){
             int x=sc.nextInt();
             int sum=0;
-            int arr[]=new int[x];
+            int[] arr =new int[x];
             for (int i=0;i<x;i++){
                 arr[i]=sc.nextInt();
             }
@@ -35,9 +35,9 @@ public class Competition {
     public void B(){
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
-            StringBuilder sb=new StringBuilder("");
+            StringBuilder sb=new StringBuilder();
             int x=sc.nextInt();
-            int arr[]=new int[32];
+            int[] arr =new int[32];
             for (int i=0;i<arr.length;i++){
                 arr[i]=(x>>i)&1;
             }
@@ -55,7 +55,7 @@ public class Competition {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
             int x=sc.nextInt();
-            int arr[]=new int[x];
+            int[] arr =new int[x];
             for (int i=0;i<arr.length;i++){
                 arr[i]=sc.nextInt();
             }
@@ -65,7 +65,7 @@ public class Competition {
     }
 
     private int helperC(int[] arr) {
-        int result[]=new int[arr.length+1];
+        int[] result =new int[arr.length+1];
         result[0]=0;
         result[1]=arr[0];
         for (int i=1;i<arr.length;i++){

@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class 前K个高频元素 {
     //链接:https://leetcode-cn.com/problems/top-k-frequent-elements/
     public int[] topKFrequent(int[] nums, int k) {
-        int arr[]=new int[k];
+        int[] arr =new int[k];
         HashMap<Integer,Integer> hashMap=new HashMap<>();
         for (int i=0;i<nums.length;hashMap.put(nums[i],hashMap.getOrDefault(nums[i],0)+1),i++);
         PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {

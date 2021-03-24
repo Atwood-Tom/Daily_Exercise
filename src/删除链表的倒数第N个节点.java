@@ -28,7 +28,7 @@ public class 删除链表的倒数第N个节点 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
+        String[] s =sc.nextLine().split(" ");
         int x=sc.nextInt();
         ListNode head=new ListNode(Integer.parseInt(s[0]));
         ListNode tail=head;

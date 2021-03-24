@@ -15,7 +15,7 @@ public class 删除公共字符串 {
             char x=b.charAt(i);
             while(a.indexOf(x)!=-1){
                 int j=a.indexOf(x);
-                a=a.substring(0,j)+a.substring(j+1,a.length());
+                a=a.substring(0,j)+a.substring(j+1);
             }
         }
         return a;

@@ -24,7 +24,7 @@ public class 回文链表 {
         }
         int length=0;
         for (ListNode p=head;p!=null;length++,p=p.next);
-        int arr[]=new int[length];
+        int[] arr =new int[length];
         length=0;
         for (ListNode p=head;p!=null;arr[length]=p.val,p=p.next,length++);
         for (int i=0,j=arr.length-1;i<j;i++,j--){

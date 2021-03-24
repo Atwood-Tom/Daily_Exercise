@@ -3,31 +3,31 @@ import java.util.Arrays;
 public class Sort {
 
     public static void main(String[] args) {
-        int arr[]=new int[]{5,5,5,5,5};
+        int[] arr =new int[]{5,5,5,5,5};
         System.out.println(Arrays.toString(arr));
         //插入排序
         System.out.print("插入排序:");
-        int result1[]=arr.clone();
+        int[] result1 =arr.clone();
                 result1=insertSort(arr);
         System.out.println(Arrays.toString(result1));
         //选择排序
         System.out.print("选择排序:");
-        int result2[]=arr.clone();
+        int[] result2 =arr.clone();
                 result2=selectSort(arr);
         System.out.println(Arrays.toString(result2));
         //堆排序
         System.out.print(" 堆排序:");
-        int result3[]=arr.clone();
+        int[] result3 =arr.clone();
                 result3=heapSort(arr);
         System.out.println(Arrays.toString(result3));
         //希尔排序
         System.out.print("希尔排序:");
-        int result4[]=arr.clone();
+        int[] result4 =arr.clone();
             result4=shellSort(arr);
         System.out.println(Arrays.toString(result4));
         //快速排序
         System.out.print("快速排序:");
-        int result5[]=arr.clone();
+        int[] result5 =arr.clone();
         quickSort(result5);
         System.out.println(Arrays.toString(result5));
         //正确答案

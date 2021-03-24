@@ -7,7 +7,7 @@ public class 剪绳子 {
         if (n<=3){
             return n-1;
         }
-        int arr[]=new int[n+1];
+        int[] arr =new int[n+1];
         arr[1]=1;
         arr[2]=2;
         arr[3]=3;

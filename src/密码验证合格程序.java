@@ -47,9 +47,7 @@ public class 密码验证合格程序 {
             }
         }
         if (mypassword.length()>8&&symbolNumber>=3){
-            if (qualified2(mypassword)){
-                return true;
-            }
+            return qualified2(mypassword);
         }
         return false;
     }

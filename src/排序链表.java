@@ -34,7 +34,7 @@ public class 排序链表 {
         int i=0;
         ListNode p=head;
         for(;p!=null;i++,p=p.next);
-        int arr[]=new int[i];
+        int[] arr =new int[i];
         for (i=0, p=head;p!=null&&i<arr.length;arr[i]=p.val,i++,p=p.next);
         Arrays.sort(arr);
         for (i=0,p=head;p!=null&&i<arr.length;p.val=arr[i],i++,p=p.next);

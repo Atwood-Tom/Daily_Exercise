@@ -17,10 +17,7 @@ public class 括号形式是否正确 {
                 }
             }
         }
-        if (myStack.isEmpty()){
-            return true;
-        }
-        return false;
+        return myStack.isEmpty();
     }
 
     public static void main(String[] args) {

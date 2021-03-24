@@ -7,7 +7,7 @@ public class 字符串中的第一个唯一字符 {
         int result=0;
         for(;result<s.length();result++){
             char x=s.charAt(result);
-            if (s.indexOf(x,result+1)==-1&&s.indexOf(x,0)==result){
+            if (s.indexOf(x,result+1)==-1&&s.indexOf(x)==result){
                 return result;
             }
         }

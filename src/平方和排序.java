@@ -12,7 +12,7 @@ public class 平方和排序 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
             int nums=sc.nextInt();
-            int arr[][]=new int[nums][2];
+            int[][] arr =new int[nums][2];
             for (int i=0;i<nums;i++){
                 arr[i][0]=sc.nextInt();
                 arr[i][1]=squares(arr[i][0]);

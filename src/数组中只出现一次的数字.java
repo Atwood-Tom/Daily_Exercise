@@ -4,7 +4,7 @@ public class 数组中只出现一次的数字 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int nums=sc.nextInt();
-        int arr[]=new int[nums];
+        int[] arr =new int[nums];
         HashMap<Integer,Integer> helper=new HashMap<>();
         for (int i=0;i<nums;i++){
             arr[i]=sc.nextInt();

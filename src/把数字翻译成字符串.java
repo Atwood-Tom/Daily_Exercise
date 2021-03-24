@@ -6,7 +6,7 @@ public class 把数字翻译成字符串 {
             return 0;
         }
         
-        int result[]=new int[helper.length()+1];
+        int[] result =new int[helper.length()+1];
         result[0]=result[1]=1;
         for (int i=1;i<helper.length();i++){
             String x=helper.substring(i-1,i+1);

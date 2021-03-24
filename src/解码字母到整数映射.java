@@ -4,7 +4,7 @@ public class 解码字母到整数映射 {
     //链接:https://leetcode-cn.com/problems/decrypt-string-from-alphabet-to-integer-mapping/
     //方法一:
     public static String freqAlphabets(String s) {
-        char arr[]=s.toCharArray();
+        char[] arr =s.toCharArray();
         HashMap<String,Character> hashMap=new HashMap<>();
         char x='a';
         for (int i=1;i<=26;i++,x++){
@@ -27,7 +27,7 @@ public class 解码字母到整数映射 {
     public String freqAlphabets2(String s) {
         int len=s.length();
         String res="";
-        char sb[]=s.toCharArray();
+        char[] sb =s.toCharArray();
         for (int i = 0; i <sb.length ;) {
             if(len-i>2 && sb[i+2]=='#'){
                 int c=(sb[i]-'0')*10+(sb[i+1]-'0');

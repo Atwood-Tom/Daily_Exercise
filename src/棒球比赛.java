@@ -27,7 +27,7 @@ public class 棒球比赛 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
+        String[] s =sc.nextLine().split(" ");
         int x=calPoints(s);
         System.out.println(x);
     }

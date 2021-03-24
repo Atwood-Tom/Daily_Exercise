@@ -42,7 +42,7 @@ public class 青蛙跳台阶问题 {
         if (n<=2){
             return n;
         }
-        int arr[]=new int[n+1];
+        int[] arr =new int[n+1];
         arr[0]=1;
         arr[1]=1;
         arr[2]=2;

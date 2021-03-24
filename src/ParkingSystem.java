@@ -1,5 +1,5 @@
 class ParkingSystem {
-    public int res[]=new int[3];
+    public int[] res =new int[3];
     public ParkingSystem(int big, int medium, int small) {
         res[0]=big;
         res[1]=medium;

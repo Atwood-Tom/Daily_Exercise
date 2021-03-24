@@ -8,7 +8,7 @@ public class 爬楼梯 {
         if (n==2){
             return 2;
         }
-        int arr[]=new int[n-1];
+        int[] arr =new int[n-1];
         arr[0]=1;
         arr[1]=2;
         for (int i=2;i<arr.length;i++){

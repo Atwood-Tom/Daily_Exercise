@@ -5,7 +5,7 @@ public class 按既定顺序创建目标数组 {
     //链接:https://leetcode-cn.com/problems/create-target-array-in-the-given-order/
     //方法一:
     public int[] createTargetArray(int[] nums, int[] index) {
-        int result[]=new int[index.length];
+        int[] result =new int[index.length];
         for (int i=0;i<index.length;i++){
             insert(nums,index,result,i);
         }

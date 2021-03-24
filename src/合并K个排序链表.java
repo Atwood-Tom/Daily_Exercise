@@ -41,7 +41,7 @@ public class 合并K个排序链表 {
                 length++;
             }
         }
-        int arr[]=new int[length];
+        int[] arr =new int[length];
         int i=0;
         for (ListNode x:lists){
             while (x!=null) {

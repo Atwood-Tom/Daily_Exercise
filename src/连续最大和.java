@@ -5,7 +5,7 @@ public class 连续最大和 {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNext()){
             int number=sc.nextInt();
-            int arr[]=new int[number];
+            int[] arr =new int[number];
             for (int i=0;i<number;i++){
                 arr[i]=sc.nextInt();
             }

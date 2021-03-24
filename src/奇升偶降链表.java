@@ -7,7 +7,7 @@ public class 奇升偶降链表 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         while(sc.hasNextInt()){
-            int arr[]=new int[sc.nextInt()];
+            int[] arr =new int[sc.nextInt()];
             if(arr.length==0){
                 continue;
             }

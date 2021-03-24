@@ -9,7 +9,7 @@ public class 数组中数字出现的个数 {
         while((sum&first)==0){
             first=first<<1;
         }
-        int result[]=new int[2];
+        int[] result =new int[2];
         for(int i=0;i<nums.length;i++){
             if((nums[i]&first)==0){
                 result[0]^=nums[i];

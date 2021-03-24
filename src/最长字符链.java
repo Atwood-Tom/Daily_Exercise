@@ -22,7 +22,7 @@ public class 最长字符链 {
                 continue;
             }else {
                 for (int j=0;j<words[i].length();j++){
-                    String helper=words[i].substring(0,j)+words[i].substring(j+1,words[i].length());
+                    String helper=words[i].substring(0,j)+words[i].substring(j+1);
                     if (hashMap.containsKey(helper)&&!hashMap.containsKey(words[i])){
                         hashMap.put(words[i],hashMap.get(helper)+1);
                     }else if (hashMap.containsKey(helper)&&hashMap.containsKey(words[i])){

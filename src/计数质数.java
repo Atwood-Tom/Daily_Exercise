@@ -32,7 +32,7 @@ public class 计数质数 {
     static class Solution2{
         public static int countPrimes(int x){
             int res=0;
-            int arr[]=new int[x];
+            int[] arr =new int[x];
             for (int i=2;i*i<arr.length;i++){
                 for (int j=2;i*j<arr.length;arr[i*j]=1,j++);
             }

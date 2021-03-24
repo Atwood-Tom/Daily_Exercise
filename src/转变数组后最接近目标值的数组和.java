@@ -48,7 +48,7 @@ public class 转变数组后最接近目标值的数组和 {
         return arr[len-1];
     }
     public static void main(String[] args) {
-        int arr[]=new int[]{4,9,3};
+        int[] arr =new int[]{4,9,3};
         int x=findBestValue(arr,10);
         System.out.println(x);
     }

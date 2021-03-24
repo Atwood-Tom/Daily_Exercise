@@ -8,7 +8,7 @@ public class 统计回文 {
             String B=sc.nextLine();
             int result=0;
             for (int i=0;i<=A.length();i++){
-                String helper=A.substring(0,i)+B+A.substring(i,A.length());
+                String helper=A.substring(0,i)+B+A.substring(i);
                 if (Solution(helper)){
                     result++;
                 }

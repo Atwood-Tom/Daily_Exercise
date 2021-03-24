@@ -2,7 +2,7 @@ import java.util.Scanner;
 //链接:https://leetcode-cn.com/problems/largest-rectangle-in-histogram/
 public class 柱状图中最大的矩形 {
     //暴力法解决
-    public static int MAX(int heights[],int max,int i){
+    public static int MAX(int[] heights, int max, int i){
         int width=1;
         int height=heights[i];
         for (int j=i+1;j>=0&&j<heights.length;j++){
@@ -48,8 +48,8 @@ public class 柱状图中最大的矩形 {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String s[]=sc.nextLine().split(" ");
-        int arr[]=new int[s.length];
+        String[] s =sc.nextLine().split(" ");
+        int[] arr =new int[s.length];
         for (int i=0;i<s.length;i++){
             arr[i]=Integer.parseInt(s[i]);
         }

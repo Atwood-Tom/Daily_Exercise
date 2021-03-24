@@ -28,9 +28,7 @@ public class 找出克隆二叉树中的相同节点 {
         }
         if (original.right!=null){
             TreeNode x=helper(original.right,cloned.right,target);
-            if (x!=null){
-                return x;
-            }
+            return x;
         }
         return null;
     }

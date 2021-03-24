@@ -23,7 +23,7 @@ public class 最小的K个数 {
                 }
             }
         }
-        int result[]=new int[k];
+        int[] result =new int[k];
         for (int i=0;!pq.isEmpty();i++){
             result[i]=pq.remove();
         }

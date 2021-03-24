@@ -19,7 +19,7 @@ public class TinyURL的加密与解密 {
     //解密
     public String decode1(String shortUrl) {
         int i=shortUrl.lastIndexOf("/");
-        i=Integer.parseInt(shortUrl.substring(i+1,shortUrl.length()));
+        i=Integer.parseInt(shortUrl.substring(i+1));
         return shortUrl.substring(0,shortUrl.indexOf("//")+2)+mapA.get(i);
     }
 

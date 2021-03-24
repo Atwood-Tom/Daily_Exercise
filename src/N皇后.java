@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class N皇后 {
     //链接：https://leetcode-cn.com/problems/n-queens/
     public static List<List<String>> solveNQueens(int n) {
-        String checkerboard[][]=new String[n][n];
+        String[][] checkerboard =new String[n][n];
         for (int i=0;i<n;i++){
             for (int j=0;j<n;j++){
                 checkerboard[i][j]="Q";
@@ -24,7 +24,7 @@ public class N皇后 {
         }
         for (int i=0;i<checkerboard.length;i++){
             if (checkerboard[row][i].equals("Q")){
-                String a[][]=new String[checkerboard.length][checkerboard.length];
+                String[][] a =new String[checkerboard.length][checkerboard.length];
                 for (int x=0;x<checkerboard.length;x++){
                     for (int y=0;y<checkerboard.length;y++){
                         a[x][y]=checkerboard[x][y];

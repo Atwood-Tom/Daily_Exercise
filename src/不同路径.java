@@ -1,7 +1,7 @@
 public class 不同路径 {
     //链接:https://leetcode-cn.com/problems/unique-paths/
     public int uniquePaths(int m, int n) {
-        int arr[][]=new int[m][n];
+        int[][] arr =new int[m][n];
         arr[0][0]=0;
         for (int i=0;i<n;i++){
             arr[0][i]=1;

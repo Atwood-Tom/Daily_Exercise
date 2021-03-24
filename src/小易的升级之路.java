@@ -7,7 +7,7 @@ public class 小易的升级之路 {
             int n,a;
             n=sc.nextInt();
             a=sc.nextInt();
-            int arr[]=new int[n];
+            int[] arr =new int[n];
             for (int i=0;i<arr.length;arr[i]=sc.nextInt(),i++);
             for (int i=0;i<arr.length;i++){
                 if (a>arr[i]){

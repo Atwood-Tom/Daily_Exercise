@@ -5,7 +5,7 @@ public class 字符串解码 {
     public static Stack<String> myString=new Stack<>();
     public static String decodeString(String s) {
         String x="";
-        char arr[]=s.toCharArray();
+        char[] arr =s.toCharArray();
         for (int i=0;i<arr.length;){
             if (arr[i]==']'){
                 for (;!"[".equals(myString.peek());){

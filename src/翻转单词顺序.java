@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class 翻转单词顺序 {
     //链接:https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/
     public static String reverseWords1(String s) {
-        String arr[]=s.split(" ");
+        String[] arr =s.split(" ");
         String end="";
         for (int i=arr.length-1;i>=0;i--){
             if ("".equals(arr[i])){
@@ -18,7 +18,7 @@ public class 翻转单词顺序 {
         return end;
     }
     public static String reverseWords(String s) {
-        String arr[]=s.split(" ");
+        String[] arr =s.split(" ");
         StringBuffer sb=new StringBuffer();
         for (int i=arr.length-1;i>=0;i--){
             if (!arr[i].equals("")){

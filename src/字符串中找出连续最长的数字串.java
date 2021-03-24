@@ -6,7 +6,7 @@ public class 字符串中找出连续最长的数字串 {
         while(sc.hasNext()){
             String s=sc.nextLine();
             if (s.length()==0){
-                System.out.println("");
+                System.out.println();
                 continue;
             }
             String res=Solution(s);

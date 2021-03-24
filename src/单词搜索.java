@@ -1,7 +1,7 @@
 public class 单词搜索 {
     //链接:https://leetcode-cn.com/problems/word-search/
     public boolean exist(char[][] board, String word) {
-        char helper[][][]=new char[board.length][board[0].length][2];
+        char[][][] helper =new char[board.length][board[0].length][2];
         for (int i=0;i<board.length;i++){
             for (int j=0;j<board[0].length;j++){
                 char mid=board[i][j];

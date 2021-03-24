@@ -18,11 +18,7 @@ public class 路径总和 {
     private boolean helper(TreeNode root, int sum) {
         sum-=root.val;
         if (root.left==null&&root.right==null){
-            if (sum==0){
-                return true;
-            }else {
-                return false;
-            }
+            return sum == 0;
         }else if (root.left==null&&root.right!=null){
             return helper(root.right,sum);
         }else if (root.left!=null&&root.right==null){

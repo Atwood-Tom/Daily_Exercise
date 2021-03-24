@@ -13,7 +13,7 @@ public class 二叉搜索树的第k大节点 {
     public int kthLargest1(TreeNode root, int k) {
         List<Integer> list=new LinkedList<>();
         helper(list,root);
-        int arr[]=new int[list.size()];
+        int[] arr =new int[list.size()];
         for (int i=0;i<arr.length;i++){
             arr[i]=list.remove(0);
         }

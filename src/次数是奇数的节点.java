@@ -5,7 +5,7 @@ public class 次数是奇数的节点 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
-        int arr[]=new int[x];
+        int[] arr =new int[x];
         for (int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
@@ -15,7 +15,7 @@ public class 次数是奇数的节点 {
     private static void Solution(int[] arr) {
         Arrays.sort(arr);
         int z=0;
-        int end[]=new int[2];
+        int[] end =new int[2];
         for (int i=0;i<arr.length;){
             if (i+1<arr.length&&arr[i]==arr[i+1]){
                 int j=1;

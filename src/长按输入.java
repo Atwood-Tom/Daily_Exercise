@@ -19,10 +19,7 @@ public class 长按输入 {
                 }
             }
         }
-        if(i<name.length()){
-            return false;
-        }
-        return true;
+        return i >= name.length();
     }
 
     public static void main(String[] args) {

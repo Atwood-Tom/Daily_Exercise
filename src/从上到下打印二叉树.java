@@ -14,7 +14,7 @@ public class 从上到下打印二叉树 {
         Queue<TreeNode> myhelper=new LinkedList<>();
         queue.add(root);
         help(queue,myhelper);
-        int arr[]=new int[queue.size()];
+        int[] arr =new int[queue.size()];
         int i=0;
         for (TreeNode x:myhelper){
             if (x==null){

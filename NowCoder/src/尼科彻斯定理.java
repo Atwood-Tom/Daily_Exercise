@@ -10,7 +10,7 @@ public class 尼科彻斯定理 {
     }
 
     private static void Solution(int x, int time) {
-        int arr[]=new int[time];
+        int[] arr =new int[time];
         for (int i=0;i<time;i++,x++){
             if (i==time-1){
                 System.out.println((2*x+1));

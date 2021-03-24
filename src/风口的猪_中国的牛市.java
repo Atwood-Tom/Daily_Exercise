@@ -38,8 +38,8 @@ public class 风口的猪_中国的牛市 {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        String arr[]=sc.nextLine().split(",");
-        int x[]=new int[arr.length];
+        String[] arr =sc.nextLine().split(",");
+        int[] x =new int[arr.length];
         for (int i=0;i<arr.length;i++){
             x[i]=Integer.parseInt(arr[i]);
         }
