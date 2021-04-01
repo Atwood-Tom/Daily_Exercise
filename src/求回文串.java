@@ -6,7 +6,6 @@ public class 求回文串 {
         //Solution1();
         Solution2();
     }
-
     private static void Solution2() {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
@@ -60,9 +59,9 @@ public class 求回文串 {
                     next++;
                 }
             }
-            System.out.println("不删除小写字母"+x);
-            x=Solution1(x);
-            System.out.println("删除小写"+x);
+            System.out.println("不删除小写字母" + x);
+            x = Solution1(x);
+            System.out.println("删除小写" + x);
         }
     }
 

@@ -25,7 +25,6 @@ public class 递增顺序查找树 {
         }
         return root;
     }
-
     private void helper(TreeNode root) {
         if (root==null){
             return;
