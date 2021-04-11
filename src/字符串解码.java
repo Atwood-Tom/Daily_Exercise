@@ -7,8 +7,8 @@ public class 字符串解码 {
         String x="";
         char[] arr =s.toCharArray();
         for (int i=0;i<arr.length;){
-            if (arr[i]==']'){
-                for (;!"[".equals(myString.peek());){
+            if (arr[i]=='}'){
+                for (;!"{".equals(myString.peek());){
                     x=myString.pop()+x;
                 }
                 myString.pop();
@@ -21,7 +21,13 @@ public class 字符串解码 {
                 x="";
                 i++;
             }else if(arr[i]>='0'&&arr[i]<='9'){
-                int j=s.indexOf("[",i);
+                int j=i+1;
+                for(;j<arr.length;j++){
+                    if(arr[j]>='0'&&arr[j]<='9'){
+                        continue;
+                    }
+                    break;
+                }
                 myString.push(s.substring(i,j));
                 i=j;
             }else{
